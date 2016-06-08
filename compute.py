@@ -12,7 +12,7 @@ usd_price = get_usd_price()
 data = {
     'blockTime': blockTime,
     'difficulty': difficulty,
-    'priceUsd': usd_price),
+    'priceUsd': usd_price,
     'lastUpdate': time.time(),
 }
 file(sys.argv[1], 'w').write('ethereumStats = ' + json.dumps(data) + ';')
